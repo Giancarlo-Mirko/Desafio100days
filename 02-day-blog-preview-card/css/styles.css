@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+
+* {
+	--yellow-color: hsl(47, 88%, 63%);
+	--white-color: hsl(0, 0%, 100%);
+	--grey-color: hsl(0, 0%, 50%);
+	--black-color: hsl(0, 0%, 7%);
+
+	--primary-font-family: 'Figtree', sans-serif;	
+
+	box-sizing: border-box;
+	h1{
+		margin: 0;
+	}
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--yellow-color);
+	color: var(--black-color);
+	font-size: var(--font-size);
+	line-height: var(--lh-text);
+	font-size: var(--font-size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+.container{
+	background-color: var(--white-color);
+	width: 376px;
+	padding: 20px;
+	border: solid 1px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 8px 7px 0px black;
+	gap: 10px;
+}
+.img-container img{
+	border-radius: 12px;
+	width: 100%;
+}
+.butoon-container p{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.butoon {
+	display: inline-block;
+	background-color: var(--yellow-color);
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-weight: 800;
+	cursor: pointer;
+	border: 1px solid var(--yellow-color);
+	transition: transform 0.1s ease-in-out; /* Corrección aquí */
+}
+
+.butoon:hover {
+	transform: scale(1.02);
+	box-shadow: 4px 4px 8px -5px rgba(0, 0, 0, 0.6);
+}
+
+.butoon:active {
+	transform: scale(1);
+	transition: 100ms;
+	border: solid 1px;
+	box-shadow: 1px 4px 7px 1px rgba(0, 0, 0, 0.37);
+}
+
+.card-content h1{
+	font-size: 23px;
+}
+
+.card-content h1:hover{
+	font-size: 23px;
+	color: var(--yellow-color);
+	cursor: pointer;
+	text-shadow: 3px 5px 7px -1px rgba(0,0,0,0.6);;
+}
+
+.card-content p{
+	font-size: var(--font-size);
+	color: var(--grey-color);
+}
+
+.user-information{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 10px;
+}
+
+.user-information img{
+	width: 40px;
+}
+.user-information strong{
+	cursor:pointer;
+}
+
+.user-information strong:hover{
+	cursor:pointer;
+}
+
+
+@media only screen and (max-width:400px){
+	.container{
+		width: 95%;
+	}
+}

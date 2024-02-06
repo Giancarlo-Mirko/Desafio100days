@@ -1,0 +1,138 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+	--primary-font-family: 'Montserrat', sans-serif;
+	--body-bg-color: #212020;
+	--card-bg-color: #242323;
+	--text-color: #c2c2c2;
+	--fb-bg-color: #456da4;
+	--li-bg-color: #0984c6;
+	--ig-bg-color: #006184;
+	--lh-text: 22px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	line-height: var(--lh-text);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 400px;
+	border-radius: 10px;
+	background-color: var(--card-bg-color);
+	box-shadow: 1px -1px 27px 8px rgba(0,0,0,0.36);
+}
+
+.user-cotainer{
+	padding: 80px 70px 30px 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 23px;
+}
+.user-information{
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.img-container{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	transition: transform 1.5s ease;
+}
+
+img:hover{
+	transform: scale(1.2);
+}
+
+h1{
+	font-weight: bold;
+	color: var(--text-color);
+	font-size: 19px;
+}
+
+span{
+	background-color: var(--body-bg-color);
+	padding: 7px 14px;
+	border-radius: 18px;
+	color: var(--text-color);
+	cursor: pointer;
+	transition: box-shadow 0.5ms ease-in-out;
+}
+
+span:hover{
+	box-shadow: 1px 4px 7px 3px rgba(0,0,0,0.37);
+}
+
+span:active{
+	border: solid 1px;
+	font-size: 15px;
+	box-shadow: 1px 4px 7px 1px rgba(0,0,0,0.37);
+}
+
+p{
+	color: var(--text-color);
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.redes-container{
+	height: 120px;
+	width: 100%;
+	background-color: #1b1b1b;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 70px;
+}
+
+.redes-container svg{
+	width: 32px;
+	cursor: pointer;
+	transition: transform 0.5ms;
+}
+
+.redes-container svg:hover{
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 450px) {
+	.container{
+	margin: 0 10px;
+	}
+	.user-cotainer{
+		padding: 70px 45px 30px 45px;
+		gap: 20px;
+	}
+	.user-information{
+		gap: 15px;
+	}
+	.redes-container{
+		padding: 0 45px;
+	}
+}
