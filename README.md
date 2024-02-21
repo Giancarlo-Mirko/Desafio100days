@@ -8,7 +8,8 @@ hola estos son proyectos realizados para el desafio 100 days, Este desafio consi
 https://01-day-profile-card-mirko.netlify.app/
 #### 02-day-blog-preview-card 
 https://02-day-blog-preview-card-mirko.netlify.app/
-
+#### 03-day-product-info
+https://03-day-product-info-mirko.netlify.app/
 
 ## Authors
 Mirko
