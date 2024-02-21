@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- Variables ----- */
+* {
+	--primary-font-family: 'Poppins', sans-serif;
+	--body-bg-color: #EEF2F9;
+	--btn-bg-color: #4788E9;
+	--text-color: #191847;
+	--white-color: #FFFFFF;
+	--black-color: #000000;
+	--font-size: 1rem;
+	--lh-text: 22px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body {
+	font-family: var(--primary-font-family);
+	background-color: var(--body-bg-color);
+	color: var(--text-color);
+	font-size: var(--font-size);
+	line-height: var(--lh-text);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.container{
+	background-color: var(--white-color);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	gap: 10px;
+}
+picture{
+	align-self: center;
+}
+
+
+article{
+	width: 100%;
+}
+
+.tag{
+	display: inline-block;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 25px;
+
+}
+a{
+	background-color: var(--text-color);
+	color: var(--white-color);
+	padding: 1px 5px;
+	border-radius: 60px;
+	font-size: 12px;
+}
+
+.precioAnterior{
+	text-decoration: line-through
+	;
+}
+h1{
+	margin-bottom: 30px;
+	line-height: normal;
+	font-weight: bold;
+}
+h2{
+	font-size: 38px;
+	margin: 20px 0;
+	font-weight: 600;
+}
+
+p{
+	color: var(--text-color);
+	font-size: 13px;
+	opacity: 0.7;
+}
+button{
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 18px 0;
+}
+button img{
+	width: 25px;
+}
+
+.primaryButton{
+	background-color: var(--btn-bg-color);
+	color: var(--white-color);
+	border: none;
+	width: 100%;
+	border-bottom: 5px solid #1C57EE;
+	margin: 30px 0 20px 0;
+}
+
+.primaryButton:hover{
+	background-color: #3474d5;
+}
+.primaryButton:active{
+	border-bottom: 5px solid transparent;
+}
+
+.stock{
+	font-size: 14px;
+	color: var(--text-color);
+	opacity: 1;
+	font-weight: 600;
+}
+
+.buttonContainer{
+	display: flex;
+	gap: 10px;
+}
+
+.secondaryButton{
+	background-color: var(--white-color);
+	color: var(--text-color);
+	font-weight: 600;
+	border: 2px solid #56515169;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.secondaryButton:hover{
+	box-shadow: 1px 0px 21px -5px rgba(0,0,0,0.75);
+}
+.secondaryButton:active{
+	background-color: #56515169;
+}
+
+.point{
+	width: 13px;
+	height: 13px;
+	background-color: #00D98B;
+	border-radius: 50%;
+}
+
+
+@media only screen and (min-width:768px){
+	.container{
+		flex-direction: row;
+		width: 100%;
+		max-width: 830px;
+		padding: 70px;
+		gap: 40px;
+	}
+
+	picture{
+		align-self: flex-start;
+	}
+}
