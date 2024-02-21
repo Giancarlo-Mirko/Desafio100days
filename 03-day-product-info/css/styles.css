@@ -103,6 +103,7 @@ button{
 }
 button img{
 	width: 25px;
+	transition: all 0.25s;
 }
 
 .primaryButton{
@@ -110,15 +111,17 @@ button img{
 	color: var(--white-color);
 	border: none;
 	width: 100%;
-	border-bottom: 5px solid #1C57EE;
+	box-shadow: 0 5px 0 #1C57EE;
 	margin: 30px 0 20px 0;
+	box-sizing: initial;
 }
 
 .primaryButton:hover{
 	background-color: #3474d5;
 }
 .primaryButton:active{
-	border-bottom: 5px solid transparent;
+	box-shadow: 0 3px 1px #1C57EE;
+	transform: translateY(5px);
 }
 
 .stock{
@@ -149,6 +152,8 @@ button img{
 	box-shadow: 1px 0px 21px -5px rgba(0,0,0,0.75);
 }
 .secondaryButton:active{
+	box-shadow: 1px 0px 15px -5px rgba(0,0,0,0.75);
+
 	background-color: #56515169;
 }
 
